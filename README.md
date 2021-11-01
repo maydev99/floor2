@@ -4,4 +4,4 @@
 
 ## Getting Started
 
-<img src="https://github.com/maydev99/drinky/blob/master/flutter_01.png" width=25% height=25%>
+<img src="https://github.com/maydev99/floor2/blob/master/flutter_02.png" width=25% height=25%>
