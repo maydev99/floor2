@@ -17,7 +17,7 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   final EmployeeDao? dao;
 
-  MyApp({required this.dao});
+  const MyApp({Key? key, required this.dao}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, this.dao});
+  const MyHomePage({Key? key, this.dao}) : super(key: key);
 
   final EmployeeDao? dao;
 
@@ -82,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.black12,
               padding: const EdgeInsets.all(0),
               child: ListView.builder(
-                  itemCount: listEmployee != null ? listEmployee.length : 0,
+                  itemCount: listEmployee.length,
                   itemBuilder: (context, index) {
                     return Slidable(
                         actionPane: const SlidableDrawerActionPane(),
